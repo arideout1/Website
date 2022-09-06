@@ -1,0 +1,47 @@
+.background {
+    width: 100vw;
+    background-color: beige;
+    height: 100%;
+}
+
+.wrapper{
+    position: relative;
+    width: 200px;
+    height: 600px;
+    padding-top: 50px;
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: "Monaco", monospace;
+    font-size: x-large;
+    padding-top: 20px;
+}
+
+.contactBox{
+    border-style: groove;
+    border-color: grey;
+}
+
+.innerBox{
+    padding: 10px;
+    background-color: bisque;
+}
+.email{
+    z-index: 1;
+}
+
+.titleContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    padding: 5px;
+}
+
+.title {
+    padding-top: 3px;
+}

@@ -1,0 +1,4 @@
+.picture {
+    width: 100vw;
+    filter: blur(6px);
+}
