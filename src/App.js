@@ -4,7 +4,7 @@ import About from './components/About';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Contact from './components/Contact';
-import Web3 from './components/Web3';
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/web3" element={<Web3 />} />
+        <Route path="/portfolio" element={<Portfolio />} />
 
       </Routes>
     </Router>);
