@@ -1,9 +1,8 @@
-import { Button } from "../Button/Button";
 import React, { Component } from "react";
-import { MenuItems } from "./MenuItems"
+import { MenuItems } from "./MenuItems";
 import { Link } from "react-router-dom";
-import './Navbar.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './Navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 export default class Navbar extends Component {
@@ -27,11 +26,6 @@ export default class Navbar extends Component {
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (
-                            // <li key={index}>
-                            //     <a className={item.cName} href={item.url}>
-                            //         {item.title}
-                            //     </a>
-                            // </li>
                             <Link style={{ textDecoration: 'none' }} to={item.url}>
                                 <div className={item.cName}>
                                     {item.title}
