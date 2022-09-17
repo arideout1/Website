@@ -1,10 +1,12 @@
 import './App.css';
-import Homepage from './components/Homepage';
-import About from './components/About';
+import Homepage from './components/MainPages/Homepage';
+import About from './components/MainPages/About';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-import Contact from './components/Contact';
-import Portfolio from './components/Portfolio';
+import Contact from './components/MainPages/Contact';
+import Portfolio from './components/MainPages/Portfolio';
+import Hobbies from './components/MainPages/Hobbies';
+import Palantir from './components/PorfolioPages/Palantir';
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfolio" element={<Portfolio />} />
-
+        <Route path="/hobbies" element={<Hobbies />} />
+        <Route path="/portfolio/palantir" element={<Palantir />} />
       </Routes>
     </Router>);
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import Portrait from '../portrait-wide.jpg';
+import Portrait from '../../portrait-wide.jpg';
 import styles from './Homepage.module.css';
 
 function Homepage() {
