@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Portfolio.module.css'
 import Portrait from '../../portrait-wide.jpg';
 import Ptlogo from '../../ptlogo.png'
+import IHAlogo from '../../ihalogo.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faMapLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faReact } from "@fortawesome/free-brands-svg-icons"
@@ -14,6 +15,7 @@ import { Link } from "react-router-dom";
 import { Navigation, Pagination } from 'swiper';
 import ReduxLogo from "../../icons8-redux.svg"
 import BlueprintLogo from "../../blueprint-seeklogo.com.svg"
+import DjangoLogo from "../../django.svg"
 import useWindowDimensions from '../../hooks/WindowDimension';
 
 function Portfolio() {
@@ -45,9 +47,6 @@ function Portfolio() {
                                         <img className={styles.img} src={Ptlogo} alt="" ></img>
                                     </div>
                                     <div className={styles.mediaIcons}>
-                                        <FontAwesomeIcon className={styles.mediaIcon} icon={faFacebook} />
-                                        <FontAwesomeIcon className={styles.mediaIcon} icon={faFacebook} />
-                                        <FontAwesomeIcon className={styles.mediaIcon} icon={faFacebook} />
                                     </div>
                                     <div className={styles.nameProfession}>
                                         <span className={styles.name}>Palantir</span>
@@ -81,6 +80,54 @@ function Portfolio() {
                                             <button className={styles.techButton}>
                                                 <div>Blueprint</div>
                                                 <img className={styles.logo} src={BlueprintLogo} alt="React Logo" />
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className={styles.container}>
+                            <div className={styles.card}>
+                                <div className={styles.content}>
+                                    <div className={styles.image}>
+                                        <img className={styles.img} src={IHAlogo} alt="" ></img>
+                                    </div>
+                                    <div className={styles.mediaIcons}>
+                                    </div>
+                                    <div className={styles.nameProfession}>
+                                        <span className={styles.name}>Integrated Healthcare Association</span>
+                                        <span className={styles.profession}>Full Stack Web Developer: Measure Metadata Service</span>
+                                    </div>
+                                    <div className={styles.buttons} >
+                                        <a target="_blank" href="https://www.iha.org/"><button className={`${styles.button} ${styles.aboutMe}`}>Background</button></a>
+                                        <Link style={{ textDecoration: 'none' }} to={"mms"} >
+                                            <button className={`${styles.button} ${styles.hireMe}`}>Project Page</button>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className={styles.tech}>
+                                    <div>
+                                        Top Technologies Used
+                                    </div>
+                                    <div className={styles.techButtons} >
+                                        <a className={styles.aTag} target="_blank" href="https://reactjs.org/">
+                                            <button className={`${styles.techButton} ${styles.react}`}>
+                                                <div>React</div>
+                                                <FontAwesomeIcon className={styles.reactLogo} icon={faReact} />
+                                            </button>
+                                        </a>
+                                        <a className={styles.aTag} target="_blank" href="https://www.djangoproject.com/">
+                                            <button className={styles.techButton}>
+                                                <div>Django</div>
+                                                <img className={styles.logo} src={DjangoLogo} alt="Django Logo" />
+                                            </button>
+                                        </a>
+                                        <a className={styles.aTag} target="_blank" href="https://redux.js.org/">
+                                            <button className={styles.techButton}>
+                                                <div>Redux</div>
+                                                <img className={styles.logo} src={ReduxLogo} alt="React Logo" />
                                             </button>
                                         </a>
                                     </div>
