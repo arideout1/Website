@@ -4,6 +4,7 @@
 }
 
 .title {
+    margin-top: 80px;
     text-align: center;
     font-size: 76px;
     color: white;
@@ -195,8 +196,9 @@
     min-width: 100%;
     min-height: 100%;
     position: fixed;
-    top: 30;
+    top: 0;
     left: 0;
+    z-index: -1;
 }
 
 .description {
