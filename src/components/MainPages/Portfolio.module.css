@@ -132,8 +132,15 @@
     padding: 8px 20px;
     border-radius: 20px;
     font-size: 14px;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     cursor: pointer;
+    background-color: #932f7c;
+    box-shadow: 0 5px 0 #571c53;
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translateY(5px);
 }
 
 .button:hover {
@@ -154,12 +161,19 @@
     padding: 10px 20px;
     border-radius: 30px;
     font-size: 18px;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     cursor: pointer;
     align-items: center;
     display: flex;
     margin: 10px;
     color: #FFF;
+    background-color: #932f7c;
+    box-shadow: 0 5px 0 #571c53;
+}
+
+.techButton:active {
+    box-shadow: none;
+    transform: translateY(5px);
 }
 
 .techButton:hover {
@@ -193,7 +207,7 @@
 }
 
 .background {
-    background-image: url('../../4407303_orig.jpg');
+    background-image: url('../../grey.png');
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
