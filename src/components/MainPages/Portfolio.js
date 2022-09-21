@@ -13,6 +13,7 @@ import TensorFlowLogo from "../../Tensorflow_logo.svg.png"
 import UnlockLogo from "../../unlock.png"
 import MetamaskLogo from "../../MetaMask_Fox.svg.png"
 import VercelLogo from "../../logo-vercel.svg"
+import DockerLogo from "../../docker.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faReact, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -129,10 +130,10 @@ function Portfolio() {
                                                 <img className={styles.logo} src={DjangoLogo} alt="Django Logo" />
                                             </button>
                                         </a>
-                                        <a className={styles.aTag} target="_blank" href="https://redux.js.org/">
+                                        <a className={styles.aTag} target="_blank" href="https://www.docker.com/">
                                             <button className={styles.techButton}>
-                                                <div>Redux</div>
-                                                <img className={styles.logo} src={ReduxLogo} alt="Redux Logo" />
+                                                <div>Docker</div>
+                                                <img className={styles.logo} src={DockerLogo} alt="Docker Logo" />
                                             </button>
                                         </a>
                                     </div>
@@ -324,16 +325,16 @@ function Portfolio() {
                                                 <FontAwesomeIcon className={styles.reactLogo} icon={faReact} />
                                             </button>
                                         </a>
+                                        <a className={styles.aTag} target="_blank" href="https://www.docker.com/">
+                                            <button className={styles.techButton}>
+                                                <div>Docker</div>
+                                                <img className={styles.logo} src={DockerLogo} alt="Docker Logo" />
+                                            </button>
+                                        </a>
                                         <a className={styles.aTag} target="_blank" href="https://www.djangoproject.com/">
                                             <button className={styles.techButton}>
                                                 <div>Django</div>
                                                 <img className={styles.logo} src={DjangoLogo} alt="Django Logo" />
-                                            </button>
-                                        </a>
-                                        <a className={styles.aTag} target="_blank" href="https://redux.js.org/">
-                                            <button className={styles.techButton}>
-                                                <div>Redux</div>
-                                                <img className={styles.logo} src={ReduxLogo} alt="Redux Logo" />
                                             </button>
                                         </a>
                                     </div>
