@@ -12,6 +12,7 @@ import DjangoLogo from "../../django.svg"
 import TensorFlowLogo from "../../Tensorflow_logo.svg.png"
 import UnlockLogo from "../../unlock.png"
 import MetamaskLogo from "../../MetaMask_Fox.svg.png"
+import VercelLogo from "../../logo-vercel.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faReact, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -179,6 +180,12 @@ function Portfolio() {
                                             <button className={styles.techButton}>
                                                 <div>Redux</div>
                                                 <img className={styles.logo} src={ReduxLogo} alt="React Logo" />
+                                            </button>
+                                        </a>
+                                        <a className={styles.aTag} target="_blank" href="https://vercel.com/">
+                                            <button className={styles.techButton}>
+                                                <div>Vercel</div>
+                                                <img className={styles.logo} src={VercelLogo} alt="Vercel Logo" />
                                             </button>
                                         </a>
                                     </div>
