@@ -1,4 +1,157 @@
-.picture {
-    width: 100vw;
+.background {
+    background-image: url('../../grey.png');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
     filter: blur(6px);
+}
+
+.img {
+    height: 300px;
+    border-radius: 25px;
+    border: 1px;
+    opacity: 1;
+}
+
+
+.transition1 {
+    transition: all 1.1s ease;
+}
+
+.transition2 {
+    transition: all 1.5s ease;
+}
+
+.transition3 {
+    transition: all 1.9s ease;
+}
+
+.leftSide {
+    padding: 10px;
+    padding-right: 250px;
+    height: 320px;
+}
+
+.rightSide {
+    padding: 10px;
+    padding-left: 250px;
+    height: 320px;
+}
+
+.transitionEnd {
+    margin: 0px;
+    padding: 10px;
+}
+
+.imgEnd {
+    opacity: 1;
+}
+
+.columnContainer {
+    width: 50%;
+}
+
+.columnLeft {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.columnRight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.columns {
+    width: 100vw;
+    display: flex;
+    justify-items: center;
+    overflow: hidden;
+}
+
+.dividerHorizontalContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.dividerHorizontal {
+    width: 100%;
+    height: 3px;
+    background-color: lightgrey;
+}
+
+.dividerVerticleContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dividerVerticle {
+    height: 100%;
+    background-color: grey;
+    width: 5px;
+}
+
+.cardContainer {
+    margin: 0px;
+}
+
+.textCard {
+    position: relative;
+    border-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #FFF;
+    width: 40vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+}
+
+.title {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.paragraph {
+    font-size: 14px;
+    padding: 10px;
+}
+
+
+.button {
+    background: #932f7c;
+    outline: none;
+    border: none;
+    color: #FFF;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 24px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    background-color: #932f7c;
+    box-shadow: 0 5px 0 #571c53;
+    margin-top: 10px
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.button:hover {
+    background: #ba3a9c;
 }
