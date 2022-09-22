@@ -206,19 +206,6 @@
     width: 90vw;
 }
 
-.background {
-    background-image: url('../../grey.png');
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-width: 100%;
-    min-height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
 .description {
     padding: 10px;
 }
