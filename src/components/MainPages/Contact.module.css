@@ -1,47 +1,192 @@
-.background {
-    width: 100vw;
+.image {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #932f7c;
+}
+
+.img {
     height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #FFF;
 }
 
-.wrapper {
+.content {
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    width: 200px;
-    height: 600px;
-    padding-top: 50px;
+    z-index: 100;
 }
 
-.infoContainer {
+.container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-family: "Monaco", monospace;
-    font-size: x-large;
-    padding-top: 20px;
-}
-
-.contactBox {
-    border-style: groove;
-    border-color: grey;
-}
-
-.innerBox {
     padding: 10px;
-    background-color: bisque;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.email {
-    z-index: 1;
+.card {
+    position: relative;
+    border-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #FFF;
+    width: 60vw;
+    height: 80vh;
 }
 
-.titleContainer {
+.card::before {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    background: #932f7c;
+    border-radius: 20px 20px 0 0;
+}
+
+.mediaIcons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
     display: flex;
+    flex-direction: column;
+}
+
+.mediaIcon {
+    align-items: center;
+    color: #fff;
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.mediaIcon:hover {
+    opacity: 1;
+}
+
+.nameProfession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.profession {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.button {
+    background: #932f7c;
+    outline: none;
+    border: none;
+    color: #FFF;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    background-color: #932f7c;
+    box-shadow: 0 5px 0 #571c53;
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.button:hover {
+    background: #ba3a9c;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contactButton {
+    background: #932f7c;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 24px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+    color: #FFF;
+    background-color: #932f7c;
+    box-shadow: 0 5px 0 #571c53;
+    flex-direction: column;
+    width: 100%;
+    min-width: 360px;
+}
+
+.contactButton:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.contactButton:hover {
+    background: #ba3a9c;
+}
+
+.contactButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
     flex-direction: row;
+}
+
+.aTag {
+    text-decoration: none;
 }
 
 .icon {
-    padding: 5px;
+    color: white;
+    padding: 10px 25px;
 }
 
-.title {
-    padding-top: 3px;
+.logo {
+    height: 24px;
+    margin-left: 5px;
+}
+
+.description {
+    padding: 10px;
+}
+
+.inButtonBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
