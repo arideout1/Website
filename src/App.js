@@ -9,11 +9,13 @@ import Hobbies from './components/MainPages/Hobbies';
 import Palantir from './components/PorfolioPages/Palantir';
 import MMS from './components/PorfolioPages/MMS';
 import AMP from './components/PorfolioPages/AMP';
+import Background from './components/Background/Background';
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <Background />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />

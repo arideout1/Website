@@ -29,7 +29,7 @@ function Portfolio() {
     const { height, width } = useWindowDimensions();
 
     return (
-        <div className={styles.background}>
+        <div>
             <div className={styles.title}>Portfolio</div>
             <>
                 <Swiper

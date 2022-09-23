@@ -12,8 +12,6 @@ function Homepage() {
     });
 
     return (<div>
-        <div className={styles.background}>
-        </div>
         <div className={styles.columns}>
             <div className={styles.columnContainer}>
                 <div className={styles.columnLeft}>
