@@ -1,0 +1,58 @@
+.divider {
+    display: flex;
+}
+
+.horizontal {
+    width: 100%;
+}
+
+.horizontal.small {
+    height: 3px;
+}
+
+.horizontal.medium {
+    height: 6px;
+}
+
+
+.horizontal.large {
+    height: 9px;
+}
+
+.vertical {
+    height: 100%;
+}
+
+.vertical.small {
+    width: 3px;
+}
+
+.vertical.medium {
+    width: 6px;
+}
+
+.vertical.large {
+    width: 9px;
+}
+
+.light {
+    background-color: lightgray;
+}
+
+.middle {
+    background-color: gray;
+}
+
+.dark {
+    background-color: rgb(79, 78, 78);
+}
+
+.vertical.padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.horizontal.padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
