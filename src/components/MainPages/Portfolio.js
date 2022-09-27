@@ -28,6 +28,10 @@ function Portfolio() {
 
     const { height, width } = useWindowDimensions();
 
+    const portFolioSwiper = {
+
+    }
+
     return (
         <div>
             <div className={styles.title}>Portfolio</div>

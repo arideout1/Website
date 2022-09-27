@@ -6,6 +6,53 @@
     justify-content: space-evenly;
 }
 
+.section {
+    width: 100%;
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .title {
     font-size: 32px;
+    padding-bottom: 5px;
+}
+
+.sectionTitle {
+    font-size: 24px;
+}
+
+.sectionBody {
+    padding: 5px;
+    text-align: left;
+}
+
+.body {
+    text-align: left;
+    padding: 5px;
+}
+
+.sectionContainer {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.exampleButton {
+    display: flex;
+    flex-direction: column;
+}
+
+.exampleButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.subSection {
+    padding: 8px;
 }
