@@ -18,13 +18,16 @@ function ExampleSwiper() {
                 clickable: true,
             }}
             modules={[Pagination, Navigation]}
-            slidesPerView={1} spaceBetween={30} navigation={true} className={`mySwiper ${styles.swiper}`}>
+            slidesPerView={1}
+            spaceBetween={30}
+            navigation={true}
+            className={`mySwiper ${styles.swiper}`}>
             <SwiperSlide>
                 <div className={styles.container}>
                     <div className={styles.card}>
                         <div className={styles.content}>
                             <div className={styles.image}>
-                                <img className={styles.img} src={Cracks} alt="" ></img>
+                                <img className={styles.img} src={YellowPlant} alt="" ></img>
                             </div>
                             <div className={styles.nameProfession}>
                                 <span className={styles.name}>Clicke the arrows</span>
@@ -39,7 +42,7 @@ function ExampleSwiper() {
                     <div className={styles.card}>
                         <div className={styles.content}>
                             <div className={styles.image}>
-                                <img className={styles.img} src={YellowPlant} alt="" ></img>
+                                <img className={styles.img} src={Cracks} alt="" ></img>
                             </div>
                             <div className={styles.nameProfession}>
                                 <span className={styles.name}>Clicke the arrows</span>
