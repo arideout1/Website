@@ -15,7 +15,7 @@ import MetamaskLogo from "../../MetaMask_Fox.svg.png"
 import VercelLogo from "../../logo-vercel.svg"
 import DockerLogo from "../../docker.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faReact, faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faReact, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -27,6 +27,10 @@ import useWindowDimensions from '../../hooks/WindowDimension';
 function Portfolio() {
 
     const { height, width } = useWindowDimensions();
+
+    const portFolioSwiper = {
+
+    }
 
     return (
         <div>
