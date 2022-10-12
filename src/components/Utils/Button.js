@@ -1,8 +1,17 @@
 import React from "react";
 import styles from "./Button.module.css"
 import { Link } from "react-router-dom";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faLinkedin, faReact } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import JSLogo from "../../javascript-1.svg"
+import TSLogo from "../../Typescript_logo.svg.png"
+import ReduxLogo from "../../icons8-redux.svg"
+import DJLogo from "../../django.svg"
+import DockerLogo from "../../docker.png"
+import CSSLogo from "../../CSS3_logo.svg.png"
+import PythonLogo from "../../Python-logo.svg.png"
+import ReactLogo from "../../React-logo.svg.png"
+import JavaLogo from "../../java-logo.png"
 
 function Button(props) {
 
@@ -12,13 +21,6 @@ function Button(props) {
     const buttonText = props.buttonText || "Button"
     const iconType = props.iconType || null
     let icon = null;
-
-    if (iconType === "fa") {
-        if (props.icon == "faLinkedin") {
-            icon = <div> <FontAwesomeIcon size='xl' className={styles.icon} icon={faLinkedin} /></div >
-
-        }
-    }
 
     if (size === "xs") {
         size = styles.xs
@@ -31,14 +33,42 @@ function Button(props) {
     }
 
 
+    if (iconType === "fa") {
+        if (props.icon === "faLinkedin") {
+            icon = <div className={styles.faIcon}> <FontAwesomeIcon className={`${styles.icon} `} icon={faLinkedin} /></div >
+
+        }
+    }
+    else if (iconType === "svg") {
+        if (props.icon === "javascript") {
+            icon = <img className={`${size} ${styles.icon} `} src={JSLogo} alt="Javascript Logo" />
+        } else if (props.icon === "typescript") {
+            icon = <img className={`${size} ${styles.icon} `} src={TSLogo} alt="TypeScript Logo" />
+        } else if (props.icon === "redux") {
+            icon = <img className={`${size} ${styles.icon} `} src={ReduxLogo} alt="Redux Logo" />
+        } else if (props.icon === "django") {
+            icon = <img className={`${size} ${styles.icon} `} src={DJLogo} alt="Django Logo" />
+        } else if (props.icon === "docker") {
+            icon = <img className={`${size} ${styles.icon} `} src={DockerLogo} alt="Docker Logo" />
+        } else if (props.icon === "css") {
+            icon = <img className={`${size} ${styles.icon} `} src={CSSLogo} alt="CSS Logo" />
+        } else if (props.icon === "python") {
+            icon = <img className={`${size} ${styles.icon} `} src={PythonLogo} alt="CSS Logo" />
+        } else if (props.icon === "java") {
+            icon = <img className={`${size} ${styles.icon} `} src={CSSLogo} alt="CSS Logo" />
+        } else if (props.icon === "react") {
+            icon = <img className={`${size} ${styles.icon} `} src={ReactLogo} alt="CSS Logo" />
+        }
+    }
+
     return (
-        <div className={styles.buttonContainer}>
+        <div className={`${size} ${styles.buttonContainer}`}>
             {
                 type == "a" ?
-                    <a className={styles.aTag} href={to}>
+                    <a target="_blank" className={styles.aTag} href={to}>
                         <button className={`${styles.button} ${size}`}>
-                            {icon !== null ? icon : ""}
                             {buttonText}
+                            {icon !== null ? icon : ""}
                         </button>
                     </a>
                     :

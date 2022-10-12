@@ -3,8 +3,6 @@
     outline: none;
     border: none;
     color: #FFF;
-    padding: 10px 25px;
-    border-radius: 20px;
     transition: all 0.1s ease;
     cursor: pointer;
     background-color: #932f7c;
@@ -13,6 +11,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    width: 100%;
 }
 
 .button:active {
@@ -27,18 +26,45 @@
 .xs {
     font-size: 14px;
     padding: 5px 15px;
+    border-radius: 12px;
+    height: 30px;
 }
 
 .small {
     font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 17px;
+    height: 40px;
 }
 
 .medium {
     font-size: 24px;
+    padding: 15px 25px;
+    border-radius: 22px;
+    height: 55px;
 }
 
 .large {
     font-size: 32px;
+    padding: 20px 30px;
+    border-radius: 27px;
+    height: 70px;
+}
+
+.xs.buttonContainer {
+    height: 25px;
+}
+
+.small.buttonContainer {
+    height: 50px
+}
+
+.medium.buttonContainer {
+    height: 75px;
+}
+
+.large.buttonContainer {
+    height: 100px;
 }
 
 .buttonContainer {
@@ -51,4 +77,52 @@
 
 .icon {
     padding-left: 8px;
+}
+
+.xs.icon {
+    height: 16px;
+    padding: 2px 0px 2px 3px;
+    border-radius: 0px;
+}
+
+.small.icon {
+    height: 24px;
+    padding: 4px 0px 4px 6px;
+    border-radius: 0px;
+}
+
+.medium.icon {
+    height: 38px;
+    padding: 6px 0px 6px 9px;
+    border-radius: 0px;
+}
+
+.large.icon {
+    height: 50px;
+    padding: 8px 0px 8px 12px;
+    border-radius: 0px;
+}
+
+.xs.faIcon {
+    height: 16px;
+    padding: 2px 0px 2px 3px;
+    border-radius: 0px;
+}
+
+.small.faIcon {
+    height: 24px;
+    padding: 4px 0px 4px 6px;
+    border-radius: 0px;
+}
+
+.medium.faIcon {
+    height: 38px;
+    padding: 6px 0px 6px 9px;
+    border-radius: 0px;
+}
+
+.large.faIcon {
+    height: 50px;
+    padding: 8px 0px 8px 12px;
+    border-radius: 0px;
 }

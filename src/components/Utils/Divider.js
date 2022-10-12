@@ -36,7 +36,6 @@ function Divider(props) {
         direction = styles.vertical
     }
 
-    console.log(size, tint, direction);
     return (
         <div className={`${direction} ${padding && styles.padding}`}>
             <div className={`${styles.divider} ${direction} ${size} ${tint}`} />
