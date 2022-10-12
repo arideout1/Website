@@ -1,9 +1,10 @@
 import React from 'react';
+import ComingSoon from "../Utils/ComingSoon"
 
 function MMS() {
 
     return (<div>
-        <div>MMS</div>
+        <ComingSoon />
     </div>)
 }
 

@@ -1,9 +1,11 @@
 import React from 'react';
+import ComingSoon from "../Utils/ComingSoon"
+
 
 function AMP() {
 
     return (<div>
-        <div>AMP</div>
+        <ComingSoon />
     </div>)
 }
 
