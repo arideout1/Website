@@ -161,7 +161,7 @@ function Portfolio() {
                                         <a target="_blank" href="https://www.adamrideout.net/">
                                             <button className={`${styles.button} ${styles.aboutMe}`}>About Me</button>
                                         </a>
-                                        <Link style={{ textDecoration: 'none' }} to={"mms"} >
+                                        <Link style={{ textDecoration: 'none' }} to={"website"} >
                                             <button className={`${styles.button} ${styles.hireMe}`}>Project Page</button>
                                         </Link>
                                     </div>
@@ -309,7 +309,7 @@ function Portfolio() {
                                     </div>
                                     <div className={styles.buttons} >
                                         <a target="_blank" href="https://iha.org/performance-measurement/amp-program/"><button className={`${styles.button} ${styles.aboutMe}`}>Background</button></a>
-                                        <Link style={{ textDecoration: 'none' }} to={"mms"} >
+                                        <Link style={{ textDecoration: 'none' }} to={"amp"} >
                                             <button className={`${styles.button} ${styles.hireMe}`}>Project Page</button>
                                         </Link>
                                     </div>

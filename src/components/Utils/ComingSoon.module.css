@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    height: 80%;
+    width: auto;
+}
+
+.txt {
+    width: 60%;
+}
+
+.bottomText {
+    padding-top: 10px;
+}

@@ -1,11 +1,11 @@
 import React from 'react';
 import ComingSoon from "../Utils/ComingSoon"
 
-function Palantir() {
+function Website() {
 
     return (<div>
         <ComingSoon />
     </div>)
 }
 
-export default Palantir;
+export default Website;

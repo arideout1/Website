@@ -10,6 +10,9 @@ import Palantir from './components/PorfolioPages/Palantir';
 import MMS from './components/PorfolioPages/MMS';
 import AMP from './components/PorfolioPages/AMP';
 import Background from './components/Background/Background';
+import Eko from './components/PorfolioPages/Eko';
+import Unlock from './components/PorfolioPages/Unlock';
+import Website from './components/PorfolioPages/Website';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
         <Route path="/portfolio/palantir" element={<Palantir />} />
         <Route path="/portfolio/mms" element={<MMS />} />
         <Route path="/portfolio/amp" element={<AMP />} />
+        <Route path="/portfolio/website" element={<Website />} />
+        <Route path="/portfolio/eko" element={<Eko />} />
+        <Route path="/portfolio/unlock" element={<Unlock />} />
       </Routes>
     </Router>);
 }
