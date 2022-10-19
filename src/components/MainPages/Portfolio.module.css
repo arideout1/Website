@@ -20,7 +20,7 @@
     width: 140px;
     border-radius: 50%;
     padding: 3px;
-    background: #932f7c;
+    background: rgba(73, 63, 252, 1);
 }
 
 .img {
@@ -74,7 +74,7 @@
     position: absolute;
     height: 120px;
     width: 100%;
-    background: #932f7c;
+    background: rgba(73, 63, 252, 1);
     border-radius: 20px 20px 0 0;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .button {
-    background: #932f7c;
+    background: rgba(73, 63, 252, 1);
     outline: none;
     border: none;
     color: #FFF;
@@ -133,8 +133,8 @@
     font-size: 14px;
     transition: all 0.1s ease;
     cursor: pointer;
-    background-color: #932f7c;
-    box-shadow: 0 5px 0 #571c53;
+    background-color: rgba(73, 63, 252, 0.9);
+    box-shadow: 0 5px 0 rgb(58, 50, 135);
 }
 
 .button:active {
@@ -143,7 +143,7 @@
 }
 
 .button:hover {
-    background: #ba3a9c;
+    background: rgb(124, 109, 255);
 }
 
 .tech {
@@ -166,8 +166,8 @@
     display: flex;
     margin: 10px;
     color: #FFF;
-    background-color: #932f7c;
-    box-shadow: 0 5px 0 #571c53;
+    background-color: rgba(73, 63, 252, 0.9);
+    box-shadow: 0 5px 0 rgb(58, 50, 135);
 }
 
 .techButton:active {
@@ -176,7 +176,7 @@
 }
 
 .techButton:hover {
-    background: #ba3a9c;
+    background: rgb(124, 109, 255);
 }
 
 .techButtons {
