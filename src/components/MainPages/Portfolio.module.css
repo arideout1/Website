@@ -20,7 +20,7 @@
     width: 140px;
     border-radius: 50%;
     padding: 3px;
-    background: rgba(73, 63, 252, 1);
+    background-color: rgb(60, 153, 220);
 }
 
 .img {
@@ -74,7 +74,7 @@
     position: absolute;
     height: 120px;
     width: 100%;
-    background: rgba(73, 63, 252, 1);
+    background: rgb(60, 153, 220);
     border-radius: 20px 20px 0 0;
 }
 
@@ -124,7 +124,6 @@
 }
 
 .button {
-    background: rgba(73, 63, 252, 1);
     outline: none;
     border: none;
     color: #FFF;
@@ -133,8 +132,8 @@
     font-size: 14px;
     transition: all 0.1s ease;
     cursor: pointer;
-    background-color: rgba(73, 63, 252, 0.9);
-    box-shadow: 0 5px 0 rgb(58, 50, 135);
+    background-color: rgb(60, 153, 220);
+    box-shadow: 0 5px 0 rgb(24, 63, 92);
 }
 
 .button:active {
@@ -143,7 +142,7 @@
 }
 
 .button:hover {
-    background: rgb(124, 109, 255);
+    background: rgb(102, 178, 250);
 }
 
 .tech {
@@ -166,8 +165,8 @@
     display: flex;
     margin: 10px;
     color: #FFF;
-    background-color: rgba(73, 63, 252, 0.9);
-    box-shadow: 0 5px 0 rgb(58, 50, 135);
+    background-color: rgb(60, 153, 220);
+    box-shadow: 0 5px 0 rgb(24, 63, 92);
 }
 
 .techButton:active {
@@ -176,7 +175,7 @@
 }
 
 .techButton:hover {
-    background: rgb(124, 109, 255);
+    background: rgb(102, 178, 250);
 }
 
 .techButtons {

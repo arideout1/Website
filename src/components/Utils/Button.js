@@ -55,7 +55,7 @@ function Button(props) {
         } else if (props.icon === "python") {
             icon = <img className={`${size} ${styles.icon} `} src={PythonLogo} alt="CSS Logo" />
         } else if (props.icon === "java") {
-            icon = <img className={`${size} ${styles.icon} `} src={CSSLogo} alt="CSS Logo" />
+            icon = <img className={`${size} ${styles.icon} `} src={JavaLogo} alt="CSS Logo" />
         } else if (props.icon === "react") {
             icon = <img className={`${size} ${styles.icon} `} src={ReactLogo} alt="CSS Logo" />
         }

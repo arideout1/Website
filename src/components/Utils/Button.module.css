@@ -4,8 +4,8 @@
     color: #FFF;
     transition: all 0.1s ease;
     cursor: pointer;
-    background-color: rgba(73, 63, 252, 0.9);
-    box-shadow: 0 5px 0 rgb(58, 50, 135);
+    background-color: rgb(60, 153, 220);
+    box-shadow: 0 5px 0 rgb(24, 63, 92);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@
 }
 
 .button:hover {
-    background: rgb(124, 109, 255);
+    background: rgb(102, 178, 250);
 }
 
 .xs {
