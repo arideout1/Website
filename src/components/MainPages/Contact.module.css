@@ -3,7 +3,7 @@
     width: 220px;
     border-radius: 50%;
     padding: 3px;
-    background-color: rgba(73, 63, 252, 0.9);
+    background-color: rgb(60, 153, 220);
 }
 
 .img {
@@ -49,7 +49,7 @@
     position: absolute;
     height: 150px;
     width: 100%;
-    background-color: rgba(73, 63, 252, 1);
+    background-color: rgb(60, 153, 220);
     border-radius: 20px 20px 0 0;
 }
 
@@ -118,8 +118,8 @@
     display: flex;
     margin: 10px;
     color: #FFF;
-    background-color: rgba(73, 63, 252, 0.9);
-    box-shadow: 0 5px 0 rgb(58, 50, 135);
+    background-color: rgb(60, 153, 220);
+    box-shadow: 0 5px 0 rgb(24, 63, 92);
     flex-direction: column;
     width: 100%;
     min-width: 360px;
@@ -131,7 +131,7 @@
 }
 
 .contactButton:hover {
-    background: rgb(124, 109, 255);
+    background: rgb(102, 178, 250);
 }
 
 .contactButtons {
