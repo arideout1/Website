@@ -1,12 +1,11 @@
 .button {
-    background: #932f7c;
     outline: none;
     border: none;
     color: #FFF;
     transition: all 0.1s ease;
     cursor: pointer;
-    background-color: #932f7c;
-    box-shadow: 0 5px 0 #571c53;
+    background-color: rgba(73, 63, 252, 0.9);
+    box-shadow: 0 5px 0 rgb(58, 50, 135);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +19,7 @@
 }
 
 .button:hover {
-    background: #ba3a9c;
+    background: rgb(124, 109, 255);
 }
 
 .xs {
