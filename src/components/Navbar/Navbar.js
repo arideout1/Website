@@ -3,7 +3,8 @@ import { MenuItems } from "./MenuItems";
 import { Link } from "react-router-dom";
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import Button from "../Utils/Button";
 
 export default class Navbar extends Component {
 
@@ -18,10 +19,14 @@ export default class Navbar extends Component {
     render() {
         return (
             <nav className="NavbarItems">
-                <FontAwesomeIcon className="icon" icon={faCode} />
                 <h1 className="navbar-logo">Adam Rideout<i className="fab fa-react"></i></h1>
+                {/* <Link className={"navbar-left"} to={"/"}>
+                    <FontAwesomeIcon className="icon" icon={faCode} />
+                </Link> */}
                 <div className="menu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : "fas fa-bars"}></i>
+                    {this.state.clicked ?
+                        <FontAwesomeIcon className="icon" icon={faTimes} /> :
+                        <FontAwesomeIcon className="icon" icon={faBars} />}
                 </div>
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
