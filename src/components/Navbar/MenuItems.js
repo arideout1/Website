@@ -24,9 +24,4 @@ export const MenuItems = [
         url: "/hobbies",
         cName: 'nav-links'
     },
-    {
-        title: "Sign up",
-        url: "#",
-        cName: 'nav-links-mobile'
-    },
 ]
