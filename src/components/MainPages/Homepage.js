@@ -9,12 +9,20 @@ import Button from '../Utils/Button';
 function Homepage() {
 
     const [isRendered, setIsRendered] = useState(false);
+    const [renderMobile, setRenderMobile] = useState(window.innerWidth < 760);
+
+    useEffect(() => {
+        function handleResize() {
+            setRenderMobile(window.innerWidth < 760)
+            console.log('resized to: ', window.innerWidth, 'x', window.innerHeight)
+            console.log(renderMobile)
+        }
+        window.addEventListener('resize', handleResize)
+    });
 
     useEffect(() => {
         setIsRendered(true);
     });
-
-    const width = window.innerWidth;
 
     const desktopView = <div className={styles.columns}>
         <div className={styles.columnContainer}>
@@ -137,7 +145,7 @@ function Homepage() {
 
     return (
         <div>
-            {width < 960 ? mobileView : desktopView}
+            {renderMobile ? mobileView : desktopView}
         </div>)
 }
 

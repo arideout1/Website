@@ -37,9 +37,9 @@ function Portfolio() {
             <div className={styles.title}>Portfolio</div>
             <>
                 <Swiper
-                    slidesPerView={Math.floor(width / 400)}
+                    slidesPerView={Math.max(Math.floor(width / 400), 1)}
                     spaceBetween={30}
-                    slidesPerGroup={Math.floor(width / 400)}
+                    slidesPerGroup={Math.max(Math.floor(width / 400), 1)}
                     loop={true}
                     loopFillGroupWithBlank={true}
                     pagination={{
@@ -94,6 +94,9 @@ function Portfolio() {
                                         </a>
                                     </div>
                                 </div>
+                            </div>
+                            <div className={styles.extraSpace}>
+
                             </div>
                         </div>
                     </SwiperSlide>

@@ -114,3 +114,73 @@
     display: flex;
     flex-direction: row;
 }
+
+
+.slideContainerMobile {
+    font-size: 12px;
+}
+
+
+.titleContainerMobile {
+    background-color: rgb(60, 153, 220);
+    width: 100%;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+}
+
+.titleMobile {
+    font-size: 20px;
+}
+
+.exampleButtonsContainerMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.exampleButtonMobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.uglyButtonContainerMobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.mobileSwipe {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(102, 178, 250);
+    border-radius: 5px;
+    color: white;
+}
+
+
+.skillButtonMobile {
+    padding-bottom: 15px;
+}
+
+.backgroundSectionMobile {
+    text-align: start;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+.arrowIcon {
+    padding: 6px;
+}
+
+.intuitive {
+    padding-bottom: 5px;
+}

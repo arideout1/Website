@@ -1,0 +1,112 @@
+.carousel {
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 24px;
+}
+
+.item {
+    scroll-snap-align: start;
+}
+
+.image {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: rgb(60, 153, 220);
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+}
+
+.content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    background: #FFF;
+    width: 100%;
+}
+
+.mediaIcons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mediaIcon {
+    align-items: center;
+    color: #fff;
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.mediaIcon:hover {
+    opacity: 1;
+}
+
+.nameProfession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.profession {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.button {
+    background: #932f7c;
+    outline: none;
+    border: none;
+    color: #FFF;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #ba3a9c;
+}
+
+.swiper {
+    width: 100%;
+}
