@@ -79,7 +79,7 @@
     }
 
     .nav-menu.active {
-        background: #6668f4;
+        background: rgba(37, 101, 174);
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -137,6 +137,12 @@
         background: white;
         color: #6568f4;
         transition: 250ms;
+    }
+
+    .navbar-left-icon {
+        position: absolute;
+        top: 23px;
+        left: 32px;
     }
 
     Button {

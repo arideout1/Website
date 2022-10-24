@@ -107,6 +107,19 @@
     justify-content: center;
 }
 
+.mobileTextCard {
+    position: relative;
+    border-radius: 20px;
+    background: #FFF;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+}
+
 .title {
     font-size: 30px;
     padding: 10px;
@@ -139,4 +152,53 @@
 
 .button:hover {
     background: rgb(102, 178, 250);
+}
+
+.cardContent {
+    position: relative;
+    opacity: 1;
+}
+
+.portfolioCardContentWrapper::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("../../portrait2.jpg");
+    background-size: 100%;
+    background-position: right 0px bottom 0px;
+    opacity: 0.35;
+    border-radius: 20px;
+}
+
+.aboutCardContentWrapper::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("../../frontend-uncropped.jpg");
+    background-size: 100%;
+    background-position: center;
+    opacity: 0.35;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-color: #3A3F52;
+}
+
+.contactCardContentWrapper::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("../../Contact-Me.jpg");
+    background-size: 100%;
+    background-position: right 0px bottom 15px;
+    opacity: 0.5;
+    border-radius: 20px;
 }
