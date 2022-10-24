@@ -159,6 +159,11 @@
     opacity: 1;
 }
 
+.mobileTextCardWrapper {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
 .portfolioCardContentWrapper::before {
     content: '';
     position: absolute;
@@ -170,6 +175,8 @@
     background-size: 100%;
     background-position: right 0px bottom 0px;
     opacity: 0.35;
+    filter: blur(2px);
+    overflow: hidden;
     border-radius: 20px;
 }
 
@@ -184,9 +191,10 @@
     background-size: 100%;
     background-position: center;
     opacity: 0.35;
-    border-radius: 20px;
+    filter: blur(2px);
     background-repeat: no-repeat;
     background-color: #3A3F52;
+    border-radius: 20px;
 }
 
 .contactCardContentWrapper::before {
@@ -199,6 +207,7 @@
     background-image: url("../../Contact-Me.jpg");
     background-size: 100%;
     background-position: right 0px bottom 15px;
-    opacity: 0.5;
+    opacity: 0.35;
+    filter: blur(2px);
     border-radius: 20px;
 }
