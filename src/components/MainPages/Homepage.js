@@ -97,13 +97,15 @@ function Homepage() {
 
     const mobileView = <div>
         <div className={`${isRendered ? styles.transitionEnd : ""}`}>
-            <div className={styles.mobileTextCard}>
-                <div className={styles.portfolioCardContentWrapper}>
-                    <div className={styles.cardContent}>
-                        <div className={styles.title}>Who I am</div>
-                        <div className={styles.paragraph}>Hi! I'm Adam Rideout. I'm a software engineer based in San Francisco. I specialize in front end web development but I also have expereince with backend, data science, machine learning, Web3 and more! In my free time I enjoy the outdoors through rock climbing, hiking, snowboard and lots of other activities. Click below to learn more!</div>
-                        <div className={styles.mobileButton}>
-                            <Button to={"/about"} buttonText="About Me"></Button>
+            <div className={styles.mobileTextCardWrapper}>
+                <div className={styles.mobileTextCard}>
+                    <div className={styles.portfolioCardContentWrapper}>
+                        <div className={styles.cardContent}>
+                            <div className={styles.title}>Who I am</div>
+                            <div className={styles.paragraph}>Hi! I'm Adam Rideout. I'm a software engineer based in San Francisco. I specialize in front end web development but I also have expereince with backend, data science, machine learning, Web3 and more! In my free time I enjoy the outdoors through rock climbing, hiking, snowboard and lots of other activities. Click below to learn more!</div>
+                            <div className={styles.mobileButton}>
+                                <Button to={"/about"} buttonText="About Me"></Button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,13 +115,15 @@ function Homepage() {
             <div className={styles.dividerHorizontal} />
         </div>
         <div className={`${isRendered ? styles.transitionEnd : ""} `}>
-            <div className={styles.mobileTextCard}>
-                <div className={styles.aboutCardContentWrapper}>
-                    <div className={styles.cardContent}>
-                        <div className={styles.title}>What I do</div>
-                        <div className={styles.paragraph}>I like to build things. I've built cutting edge websites, a machine learning model to detect heart disease, and a blockchain integrated blog service just to name a few. Learn more about my portfolio of projects below</div>
-                        <div className={styles.mobileButton}>
-                            <Button to={"/portfolio"} buttonText="Portfolio"></Button>
+            <div className={styles.mobileTextCardWrapper}>
+                <div className={styles.mobileTextCard}>
+                    <div className={styles.aboutCardContentWrapper}>
+                        <div className={styles.cardContent}>
+                            <div className={styles.title}>What I do</div>
+                            <div className={styles.paragraph}>I like to build things. I've built cutting edge websites, a machine learning model to detect heart disease, and a blockchain integrated blog service just to name a few. Learn more about my portfolio of projects below</div>
+                            <div className={styles.mobileButton}>
+                                <Button to={"/portfolio"} buttonText="Portfolio"></Button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -129,13 +133,15 @@ function Homepage() {
             <div className={styles.dividerHorizontal} />
         </div>
         <div className={`${isRendered ? styles.transitionEnd : ""}`}>
-            <div className={styles.mobileTextCard}>
-                <div className={styles.contactCardContentWrapper}>
-                    <div className={styles.cardContent}>
-                        <div className={styles.title}>How to reach me</div>
-                        <div className={styles.paragraph}>I'm always interested in connected with people. Whether its to discuss projects, opportunities or just to get to know each other better, don't hesitate to reach out!</div>
-                        <div className={styles.mobileButton}>
-                            <Button to={"/contact"} buttonText="Contact Me"></Button>
+            <div className={styles.mobileTextCardWrapper}>
+                <div className={styles.mobileTextCard}>
+                    <div className={styles.contactCardContentWrapper}>
+                        <div className={styles.cardContent}>
+                            <div className={styles.title}>How to reach me</div>
+                            <div className={styles.paragraph}>I'm always interested in connected with people. Whether its to discuss projects, opportunities or just to get to know each other better, don't hesitate to reach out!</div>
+                            <div className={styles.mobileButton}>
+                                <Button to={"/contact"} buttonText="Contact Me"></Button>
+                            </div>
                         </div>
                     </div>
                 </div>
