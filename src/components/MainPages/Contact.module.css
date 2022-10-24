@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 100;
+    z-index: 1;
 }
 
 .container {
@@ -41,10 +41,31 @@
     border-top-right-radius: 20px;
     background: #FFF;
     width: 60vw;
-    height: 80vh;
+    height: 100%;
+}
+
+.cardMobile {
+    position: relative;
+    border-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #FFF;
+    width: 95vw;
+    height: 100%;
+
 }
 
 .card::before {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(60, 153, 220);
+    border-radius: 20px 20px 0 0;
+}
+
+
+.cardMobile::before {
     content: "";
     position: absolute;
     height: 150px;
@@ -104,6 +125,24 @@
     flex-direction: column;
     align-items: center;
 
+}
+
+.contactButtonMobile {
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 24px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+    color: #FFF;
+    background-color: rgb(60, 153, 220);
+    box-shadow: 0 5px 0 rgb(24, 63, 92);
+    flex-direction: column;
+    width: 100%;
 }
 
 .contactButton {

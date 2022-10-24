@@ -44,7 +44,7 @@
     position: relative;
     border-radius: 20px;
     background: #FFF;
-    width: 280px;
+    width: 100%;
 }
 
 .mediaIcons {
@@ -91,14 +91,22 @@
     margin-top: 20px;
 }
 
+.button {
+    background: #932f7c;
+    outline: none;
+    border: none;
+    color: #FFF;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #ba3a9c;
+}
+
 .swiper {
-    width: 300px;
-}
-
-.companyTitle {
-    padding-top: 5px;
-}
-
-.buttonContainer {
-    padding-top: 5px;
+    width: 100%;
 }

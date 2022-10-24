@@ -19,10 +19,12 @@ export default class Navbar extends Component {
     render() {
         return (
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">Adam Rideout<i className="fab fa-react"></i></h1>
-                {/* <Link className={"navbar-left"} to={"/"}>
+                <Link className={"navbar-left-icon"} to={"/"}>
                     <FontAwesomeIcon className="icon" icon={faCode} />
-                </Link> */}
+                </Link>
+                <Link className={"navbar-left"} to={"/"}>
+                    <h1 className="navbar-logo">Adam Rideout<i className="fab fa-react"></i></h1>
+                </Link>
                 <div className="menu-icon" onClick={this.handleClick}>
                     {this.state.clicked ?
                         <FontAwesomeIcon className="icon" icon={faTimes} /> :
@@ -31,7 +33,7 @@ export default class Navbar extends Component {
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (
-                            <Link style={{ textDecoration: 'none' }} to={item.url}>
+                            <Link style={{ textDecoration: 'none' }} onClick={this.handleClick} to={item.url}>
                                 <div className={item.cName}>
                                     {item.title}
                                 </div>
