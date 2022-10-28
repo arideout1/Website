@@ -5,6 +5,7 @@ import Frontend from "../../front-end.jpg"
 import ContactMe from "../../Contact-Me.jpg"
 import { Link } from 'react-router-dom';
 import Button from '../Utils/Button';
+import { HPContact, HPWhatIDo, HPWhoIAm } from '../../utils/Strings.js'
 
 function Homepage() {
 
@@ -61,7 +62,7 @@ function Homepage() {
                     <div className={styles.textCard}>
                         <div className={styles.cardContent}>
                             <div className={styles.title}>Who I am</div>
-                            <div className={styles.paragraph}>Hi! I'm Adam Rideout. I'm a software engineer based in San Francisco. I specialize in front end web development but I also have expereince with backend, data science, machine learning, Web3 and more! In my free time I enjoy the outdoors through rock climbing, hiking, snowboard and lots of other activities. Click below to learn more!</div>
+                            <div className={styles.paragraph}>{HPWhoIAm}</div>
                             <Link style={{ textDecoration: 'none' }} to={"about"} >
                                 <button className={styles.button}>About Me</button>
                             </Link>
@@ -83,7 +84,7 @@ function Homepage() {
                     <div className={styles.textCard}>
                         <div className={styles.cardContent}>
                             <div className={styles.title}>How to reach me</div>
-                            <div className={styles.paragraph}>I'm always interested in connected with people. Whether its to discuss projects, opportunities or just to get to know each other better, don't hesitate to reach out!</div>
+                            <div className={styles.paragraph}>{HPContact}</div>
                             <Link style={{ textDecoration: 'none' }} to={"contact"} >
                                 <button className={styles.button}>Contact Me</button>
                             </Link>
@@ -102,7 +103,7 @@ function Homepage() {
                     <div className={styles.portfolioCardContentWrapper}>
                         <div className={styles.cardContent}>
                             <div className={styles.title}>Who I am</div>
-                            <div className={styles.paragraph}>Hi! I'm Adam Rideout. I'm a software engineer based in San Francisco. I specialize in front end web development but I also have expereince with backend, data science, machine learning, Web3 and more! In my free time I enjoy the outdoors through rock climbing, hiking, snowboard and lots of other activities. Click below to learn more!</div>
+                            <div className={styles.paragraph}></div>
                             <div className={styles.mobileButton}>
                                 <Button to={"/about"} buttonText="About Me"></Button>
                             </div>
@@ -120,7 +121,7 @@ function Homepage() {
                     <div className={styles.aboutCardContentWrapper}>
                         <div className={styles.cardContent}>
                             <div className={styles.title}>What I do</div>
-                            <div className={styles.paragraph}>I like to build things. I've built cutting edge websites, a machine learning model to detect heart disease, and a blockchain integrated blog service just to name a few. Learn more about my portfolio of projects below</div>
+                            <div className={styles.paragraph}>{HPWhatIDo}</div>
                             <div className={styles.mobileButton}>
                                 <Button to={"/portfolio"} buttonText="Portfolio"></Button>
                             </div>
@@ -138,7 +139,7 @@ function Homepage() {
                     <div className={styles.contactCardContentWrapper}>
                         <div className={styles.cardContent}>
                             <div className={styles.title}>How to reach me</div>
-                            <div className={styles.paragraph}>I'm always interested in connected with people. Whether its to discuss projects, opportunities or just to get to know each other better, don't hesitate to reach out!</div>
+                            <div className={styles.paragraph}>I'm always interested in connecting with people. Whether it’s to discuss projects, opportunities or just to get to know each other better, don't hesitate to reach out!</div>
                             <div className={styles.mobileButton}>
                                 <Button to={"/contact"} buttonText="Contact Me"></Button>
                             </div>

@@ -13,6 +13,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
+import { AbMission, AbMissionFast } from '../../utils/Strings';
 
 function About() {
 
@@ -36,15 +37,12 @@ function About() {
             </div>
             <div className={styles.sectionContainer}>
                 <div className={styles.body}>
-                    I build frontends that are intuitive, sleek, and fast. For too long, the world of software has been dominted by
-                    tools built with a lack of care for the experience of the average user. Software should be accessable to everyone, not
-                    just those of us who were lucky enough to grow surounded by technology. My goal is to master frontend development so
-                    that I can create products that users are excited to interact with.
+                    {AbMission}
                 </div>
                 <Divider size={DividerChoices.Small} tint={DividerChoices.Light} direction={DividerChoices.Horizontal} />
                 <div className={styles.subSection}>
                     <div className={styles.sectionTitle}>Sleek</div>
-                    <div>
+                    <div className={styles.sectionSubtitle}>
                         Software should be appealing
                     </div>
                     <div className={styles.exampleButtonsContainer}>
@@ -61,7 +59,7 @@ function About() {
                 <Divider size={DividerChoices.Small} tint={DividerChoices.Light} direction={DividerChoices.Horizontal} />
                 <div className={styles.subSection}>
                     <div className={styles.sectionTitle}>Intuitive</div>
-                    <div>
+                    <div className={styles.sectionSubtitle}>
                         Software should be easy to use
                     </div>
                     <div className={styles.swiperContainer}>
@@ -71,9 +69,11 @@ function About() {
                 <Divider size={DividerChoices.Small} tint={DividerChoices.Light} direction={DividerChoices.Horizontal} />
                 <div className={styles.subSection}>
                     <div className={styles.sectionTitle}>Fast</div>
+                    <div className={styles.sectionSubtitle}>
+                        Software should be fast
+                    </div>
                     <div className={styles.sectionBody}>
-                        I stay up to date on the lastest technologies, industry trends and code tricks to ensure that the frontends
-                        I build are always cutting edge and responsive. To see more about the technologies I've used and the projects they've been a part of, check out my portfolio page
+                        {AbMissionFast}
                     </div>
 
                     <div className={styles.centerButton}>
@@ -129,8 +129,7 @@ function About() {
                 <div className={styles.subSection}>
                     <div className={styles.sectionTitle}>Fast</div>
                     <div className={styles.sectionBody}>
-                        I stay up to date on the lastest technologies, industry trends and code tricks to ensure that the frontends
-                        I build are always cutting edge and responsive. To see more about the technologies I've used and the projects they've been a part of, check out my portfolio page
+                        {AbMissionFast}
                     </div>
 
                     <div className={styles.centerButton}>
@@ -149,10 +148,10 @@ function About() {
         <div className={styles.sectionContainer}>
             <div className={styles.subSection}>
                 <div className={styles.sectionTitle}>Education</div>
-                <div className={styles.exampleButtonsContainer}>
+                <div className={styles.educationContainer}>
                     <img className={styles.img} src={USC} alt="" />
                     <div className={styles.backgroundSection}>
-                        I recieved a BS in Computer Science at the University of Southern California
+                        B.S. in Computer Science
                     </div>
                 </div>
             </div>
