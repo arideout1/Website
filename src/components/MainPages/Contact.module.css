@@ -205,3 +205,8 @@
     flex-direction: row;
     align-items: center;
 }
+
+.email {
+    text-decoration: none;
+    color: white;
+}

@@ -22,8 +22,6 @@ function About() {
     useEffect(() => {
         function handleResize() {
             setRenderMobile(window.innerWidth < 760)
-            console.log('resized to: ', window.innerWidth, 'x', window.innerHeight)
-            console.log(renderMobile)
         }
         window.addEventListener('resize', handleResize)
     });
@@ -92,10 +90,7 @@ function About() {
             </div>
             <div className={styles.sectionContainer}>
                 <div className={styles.body}>
-                    I build frontends that are intuitive, sleek, and fast. For too long, the world of software has been dominted by
-                    tools built with a lack of care for the experience of the average user. Software should be accessable to everyone, not
-                    just those of us who were lucky enough to grow surounded by technology. My goal is to master frontend development so
-                    that I can create products that users are excited to interact with.
+                    {AbMission}
                 </div>
                 <Divider size={DividerChoices.Small} tint={DividerChoices.Light} direction={DividerChoices.Horizontal} />
                 <div className={styles.subSection}>
