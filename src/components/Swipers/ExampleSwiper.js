@@ -30,7 +30,7 @@ function ExampleSwiper() {
                                 <img className={styles.img} src={YellowPlant} alt="" ></img>
                             </div>
                             <div className={styles.nameProfession}>
-                                <span className={styles.name}>Clicke the arrows</span>
+                                <span className={styles.name}>Click the arrows</span>
                                 <span className={styles.profession}>Or swipe!</span>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ function ExampleSwiper() {
                                 <img className={styles.img} src={Cracks} alt="" ></img>
                             </div>
                             <div className={styles.nameProfession}>
-                                <span className={styles.name}>Clicke the arrows</span>
+                                <span className={styles.name}>Click the arrows</span>
                                 <span className={styles.profession}>Or swipe!</span>
                             </div>
                         </div>

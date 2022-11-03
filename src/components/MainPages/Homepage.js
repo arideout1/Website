@@ -15,8 +15,6 @@ function Homepage() {
     useEffect(() => {
         function handleResize() {
             setRenderMobile(window.innerWidth < 760)
-            console.log('resized to: ', window.innerWidth, 'x', window.innerHeight)
-            console.log(renderMobile)
         }
         window.addEventListener('resize', handleResize)
     });
@@ -38,7 +36,7 @@ function Homepage() {
                     <div className={styles.textCard}>
                         <div className={styles.cardContent}>
                             <div className={styles.title}>What I do</div>
-                            <div className={styles.paragraph}>I like to build things. I've built cutting edge websites, a machine learning model to detect heart disease, and a blockchain integrated blog service just to name a few. Learn more about my portfolio of projects below</div>
+                            <div className={styles.paragraph}>{HPWhatIDo}</div>
                             <Link style={{ textDecoration: 'none' }} to={"portfolio"} >
                                 <button className={styles.button}>Portfolio</button>
                             </Link>
@@ -103,7 +101,7 @@ function Homepage() {
                     <div className={styles.portfolioCardContentWrapper}>
                         <div className={styles.cardContent}>
                             <div className={styles.title}>Who I am</div>
-                            <div className={styles.paragraph}></div>
+                            <div className={styles.paragraph}>{HPWhoIAm}</div>
                             <div className={styles.mobileButton}>
                                 <Button to={"/about"} buttonText="About Me"></Button>
                             </div>
@@ -139,7 +137,7 @@ function Homepage() {
                     <div className={styles.contactCardContentWrapper}>
                         <div className={styles.cardContent}>
                             <div className={styles.title}>How to reach me</div>
-                            <div className={styles.paragraph}>I'm always interested in connecting with people. Whether it’s to discuss projects, opportunities or just to get to know each other better, don't hesitate to reach out!</div>
+                            <div className={styles.paragraph}>{HPContact}</div>
                             <div className={styles.mobileButton}>
                                 <Button to={"/contact"} buttonText="Contact Me"></Button>
                             </div>

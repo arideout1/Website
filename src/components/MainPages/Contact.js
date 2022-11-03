@@ -14,8 +14,6 @@ function Contact() {
     useEffect(() => {
         function handleResize() {
             setRenderMobile(window.innerWidth < 760)
-            console.log('resized to: ', window.innerWidth, 'x', window.innerHeight)
-            console.log(renderMobile)
         }
         window.addEventListener('resize', handleResize)
     });
@@ -96,7 +94,7 @@ function Contact() {
                                             <FontAwesomeIcon size={renderMobile ? "small" : 'xl'} className={styles.icon} icon={faEnvelope} />
                                         </div>
                                         <div>
-                                            <a href="mailto:someone@yoursite.com">adamrideout@outlook.com</a>
+                                            <a className={styles.email} href="mailto:someone@yoursite.com">adamrideout@outlook.com</a>
                                         </div>
                                     </button>
                                 </a>

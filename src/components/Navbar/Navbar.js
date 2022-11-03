@@ -33,7 +33,7 @@ export default class Navbar extends Component {
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (
-                            <Link style={{ textDecoration: 'none' }} onClick={this.handleClick} to={item.url}>
+                            <Link key={index} style={{ textDecoration: 'none' }} onClick={this.handleClick} to={item.url}>
                                 <div className={item.cName}>
                                     {item.title}
                                 </div>
