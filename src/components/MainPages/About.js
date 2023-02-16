@@ -5,7 +5,7 @@ import { DividerChoices } from '../Utils/Divider';
 import Button from '../Utils/Button';
 import ExampleSwiper from '../Swipers/ExampleSwiper';
 import ExampleSwiperMobile from '../Swipers/ExampleSwiperMobile';
-import USC from "../../USC-Logo.png";
+import USC from "../../images/USC-Logo.png";
 import JobSwiper from '../Swipers/JobSwiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles

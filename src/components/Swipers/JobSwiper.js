@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './JobSwiper.module.css'
-import IHA from "../../ihalogo.jpg"
-import PLT from "../../ptlogo.png"
-import Eko from "../../EkoLogo.jpg"
+import IHA from "../../images/ihalogo.jpg"
+import PLT from "../../images/ptlogo.png"
+import Eko from "../../images/EkoLogo.jpg"
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";

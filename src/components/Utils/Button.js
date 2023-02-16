@@ -3,15 +3,15 @@ import styles from "./Button.module.css"
 import { Link } from "react-router-dom";
 import { faLinkedin, faReact } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import JSLogo from "../../javascript-1.svg"
-import TSLogo from "../../Typescript_logo.svg.png"
-import ReduxLogo from "../../icons8-redux.svg"
-import DJLogo from "../../django.svg"
-import DockerLogo from "../../docker.png"
-import CSSLogo from "../../CSS3_logo.svg.png"
-import PythonLogo from "../../Python-logo.svg.png"
-import ReactLogo from "../../React-logo.svg.png"
-import JavaLogo from "../../java-logo.png"
+import JSLogo from "../../images/javascript-1.svg"
+import TSLogo from "../../images/Typescript_logo.svg.png"
+import ReduxLogo from "../../images/icons8-redux.svg"
+import DJLogo from "../../images/django.svg"
+import DockerLogo from "../../images/docker.png"
+import CSSLogo from "../../images/CSS3_logo.svg.png"
+import PythonLogo from "../../images/Python-logo.svg.png"
+import ReactLogo from "../../images/React-logo.svg.png"
+import JavaLogo from "../../images/java-logo.png"
 
 function Button(props) {
 

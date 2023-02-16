@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './ExampleSwiperMobile.module.css'
-import Cracks from '../../cracks.jpg';
-import YellowPlant from "../../yellowplant.jpg";
-import Leaves from "../../leaves.jpg"
+import Cracks from '../../images/cracks.jpg';
+import YellowPlant from "../../images/yellowplant.jpg";
+import Leaves from "../../images/leaves.jpg"
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
