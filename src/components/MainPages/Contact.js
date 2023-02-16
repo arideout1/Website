@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './Contact.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
-import Portrait from '../../portrait-wide.jpg';
+import Portrait from '../../images/portrait-wide.jpg';
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 

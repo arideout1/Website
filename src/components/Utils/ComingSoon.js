@@ -1,7 +1,7 @@
 import React from 'react';
-import JackHammer from "../../jackhammer.png"
+import JackHammer from "../../images/jackhammer.png"
 import styles from "./ComingSoon.module.css"
-import UnderContructionText from "../../UCText.png"
+import UnderContructionText from "../../images/UCText.png"
 
 function ComingSoon() {
     return (<div className={styles.container}>

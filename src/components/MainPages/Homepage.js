@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Homepage.module.css';
-import Portrait2 from "../../portrait-cropped.jpg"
-import Frontend from "../../front-end.jpg"
-import ContactMe from "../../Contact-Me.jpg"
+import Portrait2 from "../../images/portrait-cropped.jpg"
+import Frontend from "../../images/front-end.jpg"
+import ContactMe from "../../images/Contact-Me.jpg"
 import { Link } from 'react-router-dom';
 import Button from '../Utils/Button';
 import { HPContact, HPWhatIDo, HPWhoIAm } from '../../utils/Strings.js'

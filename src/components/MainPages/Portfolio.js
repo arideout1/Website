@@ -1,19 +1,19 @@
 import React from 'react';
 import styles from './Portfolio.module.css'
-import Portrait from '../../portrait-wide.jpg';
-import Ptlogo from '../../ptlogo.png'
-import IHAlogo from '../../ihalogo.jpg';
-import Ekologo from "../../EkoLogo.jpg";
-import CoreMLLogo from "../../core-mlpng.png"
-import PandasLogo from "../../Pandas_logo.svg.png"
-import ReduxLogo from "../../icons8-redux.svg"
-import BlueprintLogo from "../../blueprint-seeklogo.com.svg"
-import DjangoLogo from "../../django.svg"
-import TensorFlowLogo from "../../Tensorflow_logo.svg.png"
-import UnlockLogo from "../../unlock.png"
-import MetamaskLogo from "../../MetaMask_Fox.svg.png"
-import VercelLogo from "../../logo-vercel.svg"
-import DockerLogo from "../../docker.png"
+import Portrait from '../../images/portrait-wide.jpg';
+import Ptlogo from '../../images/ptlogo.png'
+import IHAlogo from '../../images/ihalogo.jpg';
+import Ekologo from "../../images/EkoLogo.jpg";
+import CoreMLLogo from "../../images/core-mlpng.png"
+import PandasLogo from "../../images/Pandas_logo.svg.png"
+import ReduxLogo from "../../images/icons8-redux.svg"
+import BlueprintLogo from "../../images/blueprint-seeklogo.com.svg"
+import DjangoLogo from "../../images/django.svg"
+import TensorFlowLogo from "../../images/Tensorflow_logo.svg.png"
+import UnlockLogo from "../../images/unlock.png"
+import MetamaskLogo from "../../images/MetaMask_Fox.svg.png"
+import VercelLogo from "../../images/logo-vercel.svg"
+import DockerLogo from "../../images/docker.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReact, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { Swiper, SwiperSlide } from "swiper/react";

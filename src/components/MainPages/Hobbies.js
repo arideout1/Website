@@ -1,5 +1,5 @@
 import React from 'react';
-import JackHammer from "../../jackhammer.png"
+import JackHammer from "../../images/jackhammer.png"
 import ComingSoon from '../Utils/ComingSoon';
 import styles from "./Hobbies.module.css"
 
