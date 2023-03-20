@@ -31,6 +31,7 @@
     grid-gap: 10px;
     width: 100%;
     justify-content: end;
+    padding-right: 10px;
 }
 
 .nav-links {
@@ -60,6 +61,10 @@
 .navbar-left-icon {
     margin-left: 10px;
     margin-right: 5px;
+}
+
+.extraOptions {
+    display: none;
 }
 
 @media screen and (max-width: 960px) {
@@ -151,6 +156,11 @@
         position: absolute;
         top: 23px;
         left: 32px;
+    }
+
+    .extraOptions {
+        display: flex;
+        flex-direction: column;
     }
 
 }

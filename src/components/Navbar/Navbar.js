@@ -44,15 +44,18 @@ function Navbar() {
                         </Link>
                     )
                 })}
-                {clicked && moreOptions.map((item, index) => {
-                    return (
-                        <Link key={index} style={{ textDecoration: 'none' }} onClick={() => handleClick()} to={item.url}>
-                            <div className={"nav-links"}>
-                                {item.value}
-                            </div>
-                        </Link>
-                    )
-                })}
+                <div className={'extraOptions'}>
+                    {moreOptions.map((item, index) => {
+                        return (
+                            <Link key={index} style={{ textDecoration: 'none' }} onClick={() => handleClick()} to={item.url}>
+                                <div className={"nav-links"}>
+                                    {item.value}
+                                </div>
+                            </Link>
+                        )
+                    })}
+
+                </div>
 
             </ul>
             {<div className="dropdown"><Dropdown options={moreOptions} text="More" /></div>}
