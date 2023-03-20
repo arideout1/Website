@@ -9,3 +9,7 @@ export const AbMission = "I build frontends that are intuitive, sleek, and fast.
 export const AbMissionFast = "I stay up to date on the latest technologies, industry trends and code tricks to ensure that the frontends I build are always cutting edge and responsive. To see more about the technologies I've used and the projects they've been a part of, check out my portfolio page"
 
 export const Hobbies = "In my free time I enjoy the outdoors through rock climbing, hiking, snowboarding and lots of other activities."
+
+export const Blog1Text = "React components are the building blocks of modern websites. This post details how to set them up, the difference between class and functional components, props, state and more."
+
+export const Blog2Text = "Redux is a state managment tool to help power up your react applications. This post explores why you would choose to use redux and some of the basic structures"
