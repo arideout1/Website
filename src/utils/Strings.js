@@ -11,3 +11,5 @@ export const AbMissionFast = "I stay up to date on the latest technologies, indu
 export const Hobbies = "In my free time I enjoy the outdoors through rock climbing, hiking, snowboarding and lots of other activities."
 
 export const Blog1Text = "React components are the building blocks of modern websites. This post details how to set them up, the difference between class and functional components, props, state and more."
+
+export const Blog2Text = "Redux is a state managment tool to help power up your react applications. This post explores why you would choose to use redux and some of the basic structures"

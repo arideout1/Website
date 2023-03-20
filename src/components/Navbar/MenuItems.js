@@ -19,14 +19,4 @@ export const MenuItems = [
         url: "/contact",
         cName: 'nav-links'
     },
-    {
-        title: "Hobbies",
-        url: "/hobbies",
-        cName: 'nav-links'
-    },
-    {
-        title: "Blog",
-        url: "/blog",
-        cName: 'nav-links'
-    },
 ]

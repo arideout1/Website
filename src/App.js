@@ -14,6 +14,7 @@ import Background from './components/Background/Background';
 import Eko from './components/PorfolioPages/Eko';
 import Unlock from './components/PorfolioPages/Unlock';
 import Website from './components/PorfolioPages/Website';
+import CodeChallenges from './components/MainPages/CodeChallenges';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/portfolio/website" element={<Website />} />
         <Route path="/portfolio/eko" element={<Eko />} />
         <Route path="/portfolio/unlock" element={<Unlock />} />
+        <Route path="/challenges" element={<CodeChallenges />} />
       </Routes>
     </Router>);
 }

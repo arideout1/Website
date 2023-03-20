@@ -1,20 +1,3 @@
-.img {
-    width: 100%;
-    height: 100%;
-}
-
-.firstLayer {
-    background-image: url("../../images/leaves.jpg");
-}
-
-.sections {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: calc(100vh - 80px);
-    justify-content: space-evenly;
-}
-
 .section {
     width: 100%;
     padding: 50px 100px;
@@ -26,21 +9,6 @@
 .title {
     font-size: 32px;
     padding-bottom: 5px;
-}
-
-.sectionTitle {
-    font-size: 24px;
-}
-
-.sectionSubtitle {
-    padding-bottom: 15px;
-    padding-top: 5px;
-    font-style: italic;
-}
-
-.sectionBody {
-    padding: 5px;
-    text-align: left;
 }
 
 .body {
@@ -68,142 +36,12 @@
     padding: 10px;
 }
 
-.exampleButton {
-    display: flex;
-    flex-direction: column;
-}
-
-.exampleButtonsContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.educationContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    font-size: 20px;
-}
-
 .subSection {
     padding: 8px;
-}
-
-.img {
-    width: 50%;
-}
-
-.backgroundSection {
-    text-align: start;
-    padding-left: 5px;
 }
 
 .centerButton {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.skillsContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.skillButton {
-    padding: 3px;
-}
-
-.skillsRow {
-    align-items: center;
-    justify-content: center;
-}
-
-.slideContainer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20vw;
-    padding-right: 20vw;
-}
-
-.skillsBottomButtons {
-    display: flex;
-    flex-direction: row;
-}
-
-
-.slideContainerMobile {
-    font-size: 12px;
-}
-
-
-.titleContainerMobile {
-    background-color: rgb(60, 153, 220);
-    width: 100%;
-    color: white;
-    text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 5px;
-}
-
-.titleMobile {
-    font-size: 20px;
-}
-
-.exampleButtonsContainerMobile {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 10px;
-}
-
-.exampleButtonMobile {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.uglyButtonContainerMobile {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-top: 15px;
-}
-
-.mobileSwipe {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(102, 178, 250);
-    border-radius: 5px;
-    color: white;
-}
-
-
-.skillButtonMobile {
-    padding-bottom: 15px;
-}
-
-.backgroundSectionMobile {
-    text-align: start;
-    padding-left: 5px;
-    font-size: 16px;
-}
-
-.arrowIcon {
-    padding: 6px;
-}
-
-.intuitive {
-    padding-bottom: 5px;
 }
