@@ -16,6 +16,7 @@ import Unlock from './components/PorfolioPages/Unlock';
 import Website from './components/PorfolioPages/Website';
 import CodeChallenges from './components/MainPages/CodeChallenges';
 import ComingSoon from './components/Utils/ComingSoon';
+import ColorGuesser from './components/Challenges/ColorGuesser';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/portfolio/unlock" element={<Unlock />} />
         <Route path="/challenges" element={<CodeChallenges />} />
         <Route path="/blog/1" element={<ComingSoon />} />
+        <Route path="/challenges/color" element={<ColorGuesser />} />
       </Routes>
     </Router>);
 }
