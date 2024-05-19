@@ -57,8 +57,23 @@ const classicBoggle = [
 ];
 
 export const Boggle = () => {
-  const [allDice, setAllDice] = useState(classicBoggle);
+  const [allDice, setAllDice] = useState([...classicBoggle]);
   const [displayLetters, setDisplayLetters] = useState([]);
+
+  function shuffle(arrToShuffle) {
+    const array = [...arrToShuffle];
+    let currentIndex = array.length;
+
+    while (currentIndex != 0) {
+      let randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex],
+        array[currentIndex],
+      ];
+    }
+    return array;
+  }
 
   const rollDice = () => {
     const letters = [];
@@ -70,6 +85,7 @@ export const Boggle = () => {
       });
       letters.push(newRow);
     });
+
     setDisplayLetters(letters);
   };
 
@@ -89,58 +105,64 @@ export const Boggle = () => {
     if (event.target.value.length !== 1) {
       return;
     }
-    const newAllDice = allDice;
-    const newRow = newAllDice[rowIndex];
-    const newDice = newRow[diceIndex];
+    const newAllDice = [...allDice];
+    const newRow = [...newAllDice[rowIndex]];
+    const newDice = [...newRow[diceIndex]];
     newDice[letterIndex] = event.target.value.substring(0, 1).toUpperCase();
     newRow[diceIndex] = newDice;
     newAllDice[rowIndex] = newRow;
-    console.log(newAllDice);
     setAllDice(newAllDice);
   };
 
+  console.log(classicBoggle);
+
   return (
     <div className={styles.container}>
-      <button className={styles.rollButton} onClick={() => rollDice()}>
-        Roll
-      </button>
+      <div className={styles.rollButtonContainer}>
+        <button className={styles.rollButton} onClick={() => rollDice()}>
+          Roll
+        </button>
+      </div>
       <div className={styles.diceBox}>
-        {displayLetters.map((row) => {
+        {shuffle(displayLetters).map((row) => {
           return <div className={styles.diceRow}>{renderRow(row)}</div>;
         })}
       </div>
       <div className={styles.title}>Customize</div>
       <div className={styles.customizeSection}>
-        Presets
-        <div className={styles.presets}>
-          <button
-            className={styles.rollButton}
-            onClick={() => handleDiceChange(classicBoggle)}
-          >
-            Classic Dice
-          </button>
-          <button
-            className={styles.rollButton}
-            onClick={() => handleDiceChange(newBoggle)}
-          >
-            New Dice
-          </button>
+        <div className={styles.presetsContainer}>
+          <div>Default Dice Sets</div>
+          <div className={styles.buttons}>
+            <button
+              className={styles.rollButton}
+              onClick={() => handleDiceChange(classicBoggle)}
+            >
+              Classic Dice
+            </button>
+            <button
+              className={styles.rollButton}
+              onClick={() => handleDiceChange(newBoggle)}
+            >
+              New Dice
+            </button>
+          </div>
+          <div className={styles.presets}></div>
         </div>
-        <div>
+        <div className={styles.customArea}>
           Custom dice
           <div
             key={allDice.toString()}
             className={styles.inputContaier}
             id={allDice.toString()}
           >
-            <div className={styles.inputBoxContainer}>
-              <div></div>
-              <div>Side 1</div>
-              <div>Side 2</div>
-              <div>Side 3</div>
-              <div>Side 4</div>
-              <div>Side 5</div>
-              <div>Side 6</div>
+            <div className={styles.inputBoxContainer2}>
+              <div>Side: </div>
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
             </div>
             {allDice.map((row, rowIndex) => {
               return (
@@ -148,10 +170,13 @@ export const Boggle = () => {
                   {row.map((dice, diceIndex) => {
                     return (
                       <div className={styles.inputBoxContainer}>
-                        {"Dice " + (rowIndex * 4 + diceIndex + 1)}
+                        <div className={styles.diceLabel}>
+                          {"Dice " + (rowIndex * 4 + diceIndex + 1)}
+                        </div>
                         {dice.map((letter, letterIndex) => {
                           return (
                             <input
+                              className={styles.input}
                               type="text"
                               id={"input" + rowIndex + diceIndex + letterIndex}
                               name={

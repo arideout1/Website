@@ -6,6 +6,10 @@
   flex-direction: column;
 }
 
+.rollButtonContainer {
+  width: 30%;
+}
+
 .diceRow {
   display: flex;
   flex-direction: row;
@@ -32,7 +36,7 @@
   align-items: center;
   text-decoration: none;
   height: 50px;
-  width: 30%;
+  width: 100%;
   margin: 10px;
   border-radius: 6px;
 }
@@ -47,29 +51,29 @@
 }
 
 .title {
-  font-size: x-large;
-  padding: 10px;
-  background-color: white;
+  font-size: large;
+  padding: 5px;
+  background-color: rgb(60, 153, 220);
+  color: white;
   border-radius: 5px;
+  margin: 10px;
 }
 
 .customizeSection {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.presets {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .inputBoxContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inputBoxContainer2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -79,4 +83,34 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+
+.presetsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.customArea {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 30px;
+}
+
+.diceLabel {
+  min-width: 60px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
