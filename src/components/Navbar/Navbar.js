@@ -20,6 +20,7 @@ function Navbar() {
         { key: "hobbies", value: "Hobbies", url: '/hobbies' },
         { key: "blog", value: "Blog", url: '/blog' },
         { key: "codeChallenges", value: "Code Challenges", url: '/challenges' },
+        { key: "games", value: "Games", url: '/games' },
     ]
     return (
         <nav className="NavbarItems">

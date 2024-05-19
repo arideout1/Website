@@ -17,6 +17,8 @@ import Website from './components/PorfolioPages/Website';
 import CodeChallenges from './components/MainPages/CodeChallenges';
 import ComingSoon from './components/Utils/ComingSoon';
 import ColorGuesser from './components/Challenges/ColorGuesser';
+import { Boggle } from './components/Challenges/Boggle';
+import { Games } from './components/MainPages/Games';
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
         <Route path="/challenges" element={<CodeChallenges />} />
         <Route path="/blog/1" element={<ComingSoon />} />
         <Route path="/challenges/color" element={<ColorGuesser />} />
+        <Route path="/games/boggle" element={<Boggle />} />
+        <Route path="/games" element={<Games />} />
       </Routes>
     </Router>);
 }

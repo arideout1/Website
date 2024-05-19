@@ -1,0 +1,82 @@
+.diceBox {
+  padding-right: 20%;
+  padding-left: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.diceRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rollButton {
+  outline: none;
+  border: none;
+  color: #fff;
+  transition: all 0.1s ease;
+  cursor: pointer;
+  background-color: rgb(60, 153, 220);
+  box-shadow: 0 5px 0 rgb(24, 63, 92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 50px;
+  width: 30%;
+  margin: 10px;
+  border-radius: 6px;
+}
+
+.rollButton:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.rollButton:hover {
+  background: rgb(102, 178, 250);
+}
+
+.title {
+  font-size: x-large;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.customizeSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.presets {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputBoxContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.inputContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}

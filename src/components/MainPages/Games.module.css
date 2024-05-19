@@ -1,0 +1,17 @@
+.gameButton {
+    height: 50px;
+    width: 30%;
+    background-color: rgb(60, 153, 220);
+    color: white;
+}
+
+.buttonContainer {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    padding-left: 5px;
+}
