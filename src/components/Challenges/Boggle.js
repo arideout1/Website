@@ -114,8 +114,6 @@ export const Boggle = () => {
     setAllDice(newAllDice);
   };
 
-  console.log(classicBoggle);
-
   return (
     <div className={styles.container}>
       <div className={styles.rollButtonContainer}>
