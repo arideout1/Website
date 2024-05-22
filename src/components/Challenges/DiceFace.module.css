@@ -10,4 +10,36 @@
   align-items: center;
   font-size: 6vw;
   font-weight: bold;
+  transition: 0.8s;
+  transform: rotateY(0deg);
+}
+
+.dice2 {
+  width: 100%;
+  background-color: bisque;
+  color: black;
+  aspect-ratio: 1 / 1;
+  margin: 3px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vw;
+  font-weight: bold;
+  transition: 0.8s;
+  transform: rotateY(360deg);
+}
+.dice:hover {
+  width: 100%;
+  background-color: bisque;
+  color: black;
+  aspect-ratio: 1 / 1;
+  margin: 3px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vw;
+  font-weight: bold;
+  transition: 0.8s;
 }

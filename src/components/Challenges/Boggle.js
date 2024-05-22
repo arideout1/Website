@@ -59,6 +59,7 @@ const classicBoggle = [
 export const Boggle = () => {
   const [allDice, setAllDice] = useState([...classicBoggle]);
   const [displayLetters, setDisplayLetters] = useState([]);
+  const [spin, setSpin] = useState(false);
 
   function shuffle(arrToShuffle) {
     const array = [...arrToShuffle];
@@ -85,7 +86,7 @@ export const Boggle = () => {
       });
       letters.push(newRow);
     });
-
+    setSpin(!spin);
     setDisplayLetters(letters);
   };
 
@@ -98,7 +99,7 @@ export const Boggle = () => {
   }, []);
 
   const renderRow = (row) => {
-    return row.map((item) => <DiceFace letter={item} />);
+    return row.map((item) => <DiceFace triggerRoll={spin} letter={item} />);
   };
 
   const handleDiceInputChange = (event, rowIndex, diceIndex, letterIndex) => {
