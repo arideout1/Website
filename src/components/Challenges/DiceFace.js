@@ -1,7 +1,9 @@
-import styles from "./DiceFace.module.css"
+import styles from "./DiceFace.module.css";
 
 export const DiceFace = (props) => {
-    return <div className={styles.dice}>
-        {props.letter === "Q" ? "Qu" : props.letter}
-    </div> 
-}
+  return (
+    <div className={props.triggerRoll ? styles.dice : styles.dice2}>
+      {props.letter === "Q" ? "Qu" : props.letter}
+    </div>
+  );
+};
